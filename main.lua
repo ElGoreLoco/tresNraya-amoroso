@@ -1,6 +1,5 @@
 local circle = love.graphics.newImage("assets/circle.png")
 local cross = love.graphics.newImage("assets/cross.png")
---local separator = love.graphics.newImage("assets/separator.png")
 local separator_hor = love.graphics.newImage("assets/separator_hor.png")
 local separator_ver = love.graphics.newImage("assets/separator_ver.png")
 
