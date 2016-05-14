@@ -1,7 +1,7 @@
 local circle = love.graphics.newImage("assets/circle.png")
 local cross = love.graphics.newImage("assets/cross.png")
-local separator_hor = love.graphics.newImage("assets/separator_hor.png")
-local separator_ver = love.graphics.newImage("assets/separator_ver.png")
+local hor_separator = love.graphics.newImage("assets/hor_separator.png")
+local ver_separator = love.graphics.newImage("assets/ver_separator.png")
 
 local board = {
     { false, true, false },
@@ -51,11 +51,11 @@ function love.draw()
     end
     -- Vertical separators
     for i = 1, 2 do
-        love.graphics.draw(separator_ver, ver_separator_position[i][1], ver_separator_position[i][2])
+        love.graphics.draw(ver_separator, ver_separator_position[i][1], ver_separator_position[i][2])
     end
     -- Horizontal separators
     for i = 1, 2 do
-        love.graphics.draw(separator_hor, hor_separator_position[i][1], hor_separator_position[i][2])
+        love.graphics.draw(hor_separator, hor_separator_position[i][1], hor_separator_position[i][2])
     end
 end
 function love.update()
