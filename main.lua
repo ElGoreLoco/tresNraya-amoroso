@@ -57,3 +57,18 @@ function love.draw()
 end
 function love.update()
 end
+function love.mousereleased(x, y, button)
+    done = false
+    for i = 1, 3 do
+        i = 4-i
+        for j = 1, 3 do
+            j = 4-j
+            if x >= circle_cross_position[i][j][1] and y >= circle_cross_position[i][j][2] then
+                board[i][j] = not board[i][j]
+                done = true
+            end
+            if done then break end
+        end
+        if done then break end
+    end
+end
