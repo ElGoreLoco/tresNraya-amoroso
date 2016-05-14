@@ -9,8 +9,7 @@ local board = {
     { false, true, false }
 }
 
-local circle_position =  {{{},{},{}},{{},{},{}},{{},{},{}}}
-local cross_position = {{{},{},{}},{{},{},{}},{{},{},{}}}
+local circle_cross_position =  {{{},{},{}},{{},{},{}},{{},{},{}}}
 local ver_separator_position = {{},{}}
 local hor_separator_position = {{},{}}
 
@@ -21,10 +20,8 @@ function love.load()
     --- Circle and cross
     for i = 1, 3 do         -- y
         for j = 1, 3 do     -- x
-            circle_position[i][j][1] = 128*(j-1)+16*(j-1)
-            circle_position[i][j][2] = 128*(i-1)+16*(i-1)
-            cross_position[i][j][1] = 128*(j-1)+16*(j-1)
-            cross_position[i][j][2] = 128*(i-1)+16*(i-1)
+            circle_cross_position[i][j][1] = 128*(j-1)+16*(j-1)
+            circle_cross_position[i][j][2] = 128*(i-1)+16*(i-1)
         end
     end
     --- Vertical separator
@@ -43,9 +40,9 @@ function love.draw()
     for i = 1, 3 do
         for j = 1, 3 do
             if board[i][j] == false then
-                love.graphics.draw(circle, circle_position[i][j][1], circle_position[i][j][2])
+                love.graphics.draw(circle, circle_cross_position[i][j][1], circle_cross_position[i][j][2])
             else
-                love.graphics.draw(cross, cross_position[i][j][1], cross_position[i][j][2])
+                love.graphics.draw(cross, circle_cross_position[i][j][1], circle_cross_position[i][j][2])
             end
         end
     end
