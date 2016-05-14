@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="512"
-   viewBox="0 0 63.999999 512"
+   width="416"
+   height="16"
+   viewBox="0 0 416 16"
    id="svg4684"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="separator.svg">
+   sodipodi:docname="separator_hor.svg"
+   inkscape:export-filename="/home/jorge/Documentos/Programación/tresNraya-amoroso/assets/separator_hor.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4686" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1580078"
-     inkscape:cx="-106.8754"
-     inkscape:cy="262.11061"
+     inkscape:zoom="2.1724841"
+     inkscape:cx="215.29878"
+     inkscape:cy="78.416129"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,10 +56,10 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-540.36219)">
+     transform="translate(0,-1036.3622)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#595959;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 32,572.36219 0,448.00001"
+       style="fill:none;fill-rule:evenodd;stroke:#595959;stroke-width:15.83766937;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 415.99713,1044.281 0.00286922,1044.4433"
        id="path5232"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
