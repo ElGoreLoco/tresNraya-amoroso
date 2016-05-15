@@ -64,8 +64,9 @@ function love.mousereleased(x, y, button)
         for j = 1, 3 do
             j = 4-j
             if x >= circle_cross_position[i][j][1] and y >= circle_cross_position[i][j][2] then
-                if board[i][j] <= 1 then board[i][j] = 2
-                elseif board[i][j] == 2 then board[i][j] = 1 end
+                if board[i][j] == 0 and button < 3 then
+                    board[i][j] = button
+                end
                 done = true
             end
             if done then break end
