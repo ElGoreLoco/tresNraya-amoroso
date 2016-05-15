@@ -4,9 +4,9 @@ local hor_separator = love.graphics.newImage("assets/hor_separator.png")
 local ver_separator = love.graphics.newImage("assets/ver_separator.png")
 
 local board = {
-    { false, true, false },
-    { true, false, true },
-    { false, true, false }
+    { 0, 0, 0 },
+    { 0, 0, 0 },
+    { 0, 0, 0 }
 }
 
 local circle_cross_position =  {{{},{},{}},{{},{},{}},{{},{},{}}}
@@ -39,9 +39,9 @@ function love.draw()
     -- Circles and crosses
     for i = 1, 3 do
         for j = 1, 3 do
-            if board[i][j] == false then
+            if board[i][j] == 1 then
                 love.graphics.draw(circle, circle_cross_position[i][j][1], circle_cross_position[i][j][2])
-            else
+            elseif board[i][j] == 2 then
                 love.graphics.draw(cross, circle_cross_position[i][j][1], circle_cross_position[i][j][2])
             end
         end
@@ -64,7 +64,8 @@ function love.mousereleased(x, y, button)
         for j = 1, 3 do
             j = 4-j
             if x >= circle_cross_position[i][j][1] and y >= circle_cross_position[i][j][2] then
-                board[i][j] = not board[i][j]
+                if board[i][j] <= 1 then board[i][j] = 2
+                elseif board[i][j] == 2 then board[i][j] = 1 end
                 done = true
             end
             if done then break end
