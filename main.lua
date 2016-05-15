@@ -74,3 +74,12 @@ function love.mousereleased(x, y, button)
         if done then break end
     end
 end
+function love.keyreleased(key)
+    if key == "r" then
+        board = {
+            { 0, 0, 0 },
+            { 0, 0, 0 },
+            { 0, 0, 0 }
+        }
+    end
+end
